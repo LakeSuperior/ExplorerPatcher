@@ -819,7 +819,8 @@ HRESULT winrt_Windows_Internal_Shell_implementation_MeetAndChatManager_OnMessage
     }
     if (uMsg == 0x2C2 && wParam == 107)
     {
-        InvokeClockFlyout();
+        //InvokeClockFlyout();
+        ToggleTaskbarAutohide();
     }
     return S_OK;
 }
