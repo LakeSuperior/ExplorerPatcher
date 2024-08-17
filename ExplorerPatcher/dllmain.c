@@ -635,7 +635,8 @@ LRESULT CALLBACK EP_Service_Window_WndProc(
     }
     else if (uMsg == WM_HOTKEY && (wParam == 1 || wParam == 2))
     {
-        InvokeClockFlyout();
+        //InvokeClockFlyout();
+        ToggleTaskbarAutohide();
         return 0;
     }
     else if (uMsg == s_uTaskbarRestart && bOldTaskbar && (dwOldTaskbarAl || dwMMOldTaskbarAl))
